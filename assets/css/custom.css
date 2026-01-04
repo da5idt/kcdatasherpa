@@ -1,0 +1,116 @@
+:root {
+  --bg: #0b0d10;
+  --surface: #12151a;
+  --surface-2: #161a20;
+  --border: #242a33;
+
+  --text-primary: #e7ebf0;
+  --text-secondary: #a9b1bc;
+  --text-muted: #7d8794;
+
+  --accent-red: #b11226;
+  --accent-red-soft: #7d0c1a;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+/* =========================
+   HEADER LAYOUT (NEW)
+   ========================= */
+
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 0 0.5rem;
+}
+
+.site-header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Centered, larger logo */
+.site-logo img {
+  height: 110px;           /* adjust: 96–120px sweet spot */
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 0.1rem;
+}
+
+/* Navigation sits below logo */
+.site-nav {
+  margin-top: 0.25rem;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.site-footer {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+/* Titles */
+.site-title,
+.post-list-heading,
+h1, h2, h3, h4 {
+  color: var(--text-primary);
+}
+
+/* Navigation & links */
+a,
+.page-link,
+.post-link {
+  color: var(--accent-red);
+  text-decoration: none;
+}
+
+a:hover,
+.page-link:hover,
+.post-link:hover {
+  color: var(--text-primary);
+  text-decoration: underline;
+}
+
+/* Meta text */
+.post-meta,
+.footer-heading,
+.contact-list li,
+.rss-subscribe {
+  color: var(--text-muted);
+}
+
+/* Content areas */
+.page-content,
+.wrapper {
+  background: transparent;
+}
+
+/* Code blocks */
+pre,
+code {
+  background: var(--surface-2);
+  color: var(--text-primary);
+  border-radius: 4px;
+}
+
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 3px solid var(--accent-red-soft);
+  color: var(--text-secondary);
+}
+
+/* Footer icons */
+.svg-icon {
+  fill: var(--text-secondary);
+}
