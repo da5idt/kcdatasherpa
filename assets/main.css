@@ -1,0 +1,92 @@
+/* Dark theme override for the site
+   Drop this file into the project at /assets/main.css — Jekyll will serve it
+   It intentionally applies a dark color palette. If you'd like to only
+   follow the user's system preference, wrap rules in
+   `@media (prefers-color-scheme: dark) { ... }` instead.
+*/
+
+:root {
+  --bg: #0b0f13;
+  --surface: #0f161a;
+  --muted: #93a1b1;
+  --text: #e6eef3;
+  --accent: #8ab4f8;
+  --accent-2: #7ee787;
+  --border: rgba(255,255,255,0.06);
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height: 1.6;
+}
+
+/* Page wrapper */
+.wrapper {
+  background: transparent;
+}
+
+.site-header, .site-footer {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-bottom: 1px solid var(--border);
+}
+
+.site-title {
+  color: var(--text);
+}
+
+.site-nav a, .page-link, .post-link {
+  color: var(--accent);
+}
+
+.page-link:hover, .post-link:hover, a:hover {
+  color: var(--accent-2);
+}
+
+.post-meta, .footer-heading, .contact-list li, .rss-subscribe {
+  color: var(--muted);
+}
+
+.post-list-heading {
+  color: var(--text);
+}
+
+/* Content container */
+.page-content, .home {
+  background: transparent;
+}
+
+/* Links and inline code */
+a { color: var(--accent); }
+code, pre {
+  background: rgba(255,255,255,0.03);
+  color: #dbe9ff;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+pre {
+  padding: 1rem;
+  overflow: auto;
+}
+
+blockquote {
+  border-left: 4px solid rgba(255,255,255,0.04);
+  color: var(--muted);
+  padding-left: 1rem;
+}
+
+/* Images and svg icons */
+img, svg { filter: none; }
+
+/* Accessibility: ensure sufficient contrast for headings */
+h1, h2, h3, h4, h5 {
+  color: var(--text);
+}
+
+/* If you prefer dark only when user requests it, uncomment:
+@media (prefers-color-scheme: dark) {
+  /* paste the above rules here and comment out the defaults */
+}
+*/
