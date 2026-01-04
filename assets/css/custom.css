@@ -46,6 +46,40 @@ html, body {
   margin-top: 0.25rem;
 }
 
+/* Force navigation text to be visible in dark header */
+.site-nav a {
+  color: var(--text-primary);
+}
+
+.site-nav a:hover {
+  color: var(--accent-red);
+}
+
+/* In centered header layout, keep nav links visible */
+/* Always show nav links */
+.site-nav .trigger {
+  display: block;
+}
+
+/* Remove hamburger menu entirely */
+.site-nav label,
+.site-nav input,
+.site-nav .menu-icon {
+  display: none;
+}
+
+/* Nav link styling */
+.site-nav .page-link {
+  color: var(--text-primary);
+}
+
+.site-nav .page-link:hover {
+  color: var(--accent-red);
+}
+
+
+
+
 /* =========================
    FOOTER
    ========================= */
