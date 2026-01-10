@@ -1,0 +1,10 @@
+{%- assign figure_class = "post-figure" -%}
+{%- if include.wide -%}
+  {%- assign figure_class = figure_class | append: " wide" -%}
+{%- endif -%}
+<figure class="{{ figure_class }}">
+  <img src="{{ include.src | relative_url }}" alt="{{ include.alt | escape }}">
+  {%- if include.caption -%}
+    <figcaption>{{ include.caption }}</figcaption>
+  {%- endif -%}
+</figure>
