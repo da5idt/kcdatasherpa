@@ -148,3 +148,30 @@ blockquote {
 .svg-icon {
   fill: var(--text-secondary);
 }
+
+/* =========================
+   POST IMAGES
+   ========================= */
+
+.post-hero,
+.post-figure {
+  margin: 1.5rem 0;
+}
+
+.post-hero img,
+.post-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.post-figure.wide {
+  width: 100%;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
