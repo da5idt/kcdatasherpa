@@ -1,0 +1,48 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ '/' | relative_url }}"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <div class="footer-brand">
+          <img
+            class="footer-brand-icon"
+            src="{{ '/assets/icons/favicon-32x32.png' | relative_url }}"
+            alt="{{ site.title | escape }}"
+          />
+          <h2 class="footer-heading">{{ site.title | escape }}</h2>
+        </div>
+        <p class="footer-description">
+          {{ site.description | escape }}
+          To learn more view the <a href="{{ '/about/' | relative_url }}">about</a> page.
+        </p>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          <li>
+            <a href="https://github.com/da5idt" aria-label="GitHub">
+              <svg class="svg-icon" aria-hidden="true">
+                <use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/davidtraynham/" aria-label="LinkedIn">
+              <svg class="svg-icon" aria-hidden="true">
+                <use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.reddit.com/user/ZookeepergameDue5814/" aria-label="Reddit">
+              <svg class="svg-icon" aria-hidden="true">
+                <use xlink:href="{{ '/assets/minima-social-icons.svg#reddit' | relative_url }}"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

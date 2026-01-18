@@ -1,0 +1,88 @@
+---
+layout: default
+---
+
+<div class="home">
+  {{ content }}
+
+  {% if site.posts.size > 0 %}
+    <h2 class="post-list-heading">Articles</h2>
+
+    {% assign category_pairs = site.categories | sort %}
+    {% if category_pairs.size > 0 %}
+      <div class="post-filter-controls">
+        <label class="filter-label" for="post-category-filter">Filter by category</label>
+        <select id="post-category-filter" class="filter-select" data-post-filter>
+          <option value="all">All categories</option>
+          {% for cat in category_pairs %}
+            {% assign cat_name = cat | first %}
+            {% assign cat_slug = cat_name | slugify %}
+            <option value="{{ cat_slug }}">{{ cat_name | replace: "-", " " }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    {% endif %}
+
+    <ul class="post-list" data-post-list>
+      {% for post in site.posts %}
+        {% assign post_category_slugs = "" %}
+        {% for cat in post.categories %}
+          {% assign cat_slug = cat | slugify %}
+          {% if forloop.first %}
+            {% assign post_category_slugs = cat_slug %}
+          {% else %}
+            {% assign post_category_slugs = post_category_slugs | append: "|" | append: cat_slug %}
+          {% endif %}
+        {% endfor %}
+        <li class="post-item" data-categories="{{ post_category_slugs }}">
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {% if post.categories %}
+            <div class="post-categories">
+              {% for cat in post.categories %}
+                <span class="post-category">{{ cat | replace: "-", " " }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {% endif %}
+</div>
+
+<script>
+  (function () {
+    var filterSelect = document.querySelector("[data-post-filter]");
+    var postList = document.querySelector("[data-post-list]");
+    if (!filterSelect || !postList) {
+      return;
+    }
+
+    var items = postList.querySelectorAll(".post-item");
+
+    function filterPosts(category) {
+      items.forEach(function (item) {
+        if (category === "all") {
+          item.classList.remove("is-hidden");
+          return;
+        }
+
+        var categories = item.getAttribute("data-categories") || "";
+        var categoryList = categories.split("|");
+        var matches = categoryList.indexOf(category) !== -1;
+        item.classList.toggle("is-hidden", !matches);
+      });
+    }
+
+    filterSelect.addEventListener("change", function () {
+      var category = filterSelect.value;
+      filterPosts(category);
+    });
+  })();
+</script>
