@@ -13,7 +13,11 @@ Most organizations are drowning in data and starving for insight.
 
 This isn’t a tooling problem. It isn’t a platform problem. And it definitely isn’t solved by another dashboard or lakehouse migration.
 
+<!--
 It’s an organizational and operating model failure.
+-->
+
+The failure is ownership, incentives, and lifecycle.
 
 We have spent the last decade getting very good at moving data around. Pipelines are faster. Storage is cheaper. Volumes are exploding. And yet trust, reuse, and speed remain elusive.
 
@@ -41,7 +45,7 @@ Centralized, slow, and brittle. Consistency is promised, but every new request g
 **The grassroots model**  
 Fast, flexible, and fragmented. Teams move quickly, but definitions drift, pipelines fork, and trust collapses under its own weight.
 
-Both academic research and enterprise case studies point to the same conclusion: sustainable scale requires **autonomy with shared standards**, not one or the other.
+Both academic research and enterprise case studies point to the same conclusion: sustainable scale requires **autonomy with shared standards**, not one or the other. In practice, this means a centralized data team owning the platform, shared capabilities, and standards, while business-aligned teams own data products, definitions, and outcomes. This balance enables reuse and self-service without sacrificing trust.
 
 ## What “Data as a Product” Actually Means
 
@@ -63,20 +67,24 @@ In practice, a real data product includes:
 - Monitoring and Service Level Agreements (SLAs) for freshness, quality, and availability
 - Governance baked in, not bolted on
 
-If you cannot answer who owns it, who uses it, and how well it performs, you do not have a data product. You have a table.
+If you cannot answer who owns it, who uses it, and how well it performs, you do not have a data product. You have a table. Also, it is critical that the data product team is explicitly funded, properly staffed, and held accountable for outcomes. Without this, “ownership” becomes a symbolic role with no real authority or impact.
+
+*Not all data should be treated as a product*. Product-level rigor should be reserved for data that is decision-critical, widely reused, or directly tied to measurable business outcomes. Applying full product discipline everywhere creates drag, not leverage.
+
+Over-productizing low-value data increases cognitive load, operating cost, and governance friction without improving decisions, ultimately slowing the teams it was meant to help.
 
 ## Ownership Is the Non-Negotiable Ingredient
 
 Trust does not emerge from good intentions. It emerges from accountability.
 
-MIT CISR research shows that organizations with clearly defined data product owners deliver analytics significantly faster and with significantly less rework. The reason is simple. When someone is accountable, uncertainty disappears.
+MIT CISR research argues that product practices and accountability improve ROI over time. The reason is simple. When someone is accountable, uncertainty disappears.
 
 SLAs turn trust into something measurable:
 - How fresh is the data?
 - What quality threshold is acceptable?
 - What happens when it breaks?
 
-This is not red tape. This is how software teams have operated for decades. Data is simply late to the conversation.
+This is not red tape. This is how software teams have operated for decades. Data is simply late to the conversation. Ownership fails when it's responsibility without authority
 
 ## Trust Is Designed, Not Assumed
 
