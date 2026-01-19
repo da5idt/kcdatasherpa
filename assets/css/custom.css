@@ -147,6 +147,19 @@ html, body {
 }
 
 @media screen and (max-width: 600px) {
+  .site-brand {
+    flex-wrap: wrap;
+  }
+
+  .site-brand-logo {
+    height: 48px;
+  }
+
+  .site-brand-title {
+    font-size: 1.6rem;
+    line-height: 1.1;
+  }
+
   .footer-top {
     flex-direction: column;
     align-items: flex-start;
