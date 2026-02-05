@@ -211,38 +211,31 @@ Start small. Start deliberately. And stop pretending your data problems will be 
 ## Cited Sources
 
 - **MIT Center for Information Systems Research (CISR)**  
-  *Shifting to a Product Mindset for Data* (2025)  
-  Establishes the link between product ownership, lifecycle management, and improved trust, reuse, and ROI in enterprise analytics.  
-  https://cisr.mit.edu/publication/2025_0401_DataProductMindset_WixomVanderMeulenBeath
+  *[Shifting to a Product Mindset for Data](https://cisr.mit.edu/publication/2025_0401_DataProductMindset_WixomVanderMeulenBeath)* (2025)  
+  Establishes the link between product ownership, lifecycle management, and improved trust, reuse, and ROI in enterprise analytics.
 
 - **Christine Legner & M. Redwan Hasan**  
-  *Understanding Data Products: Motivations, Definition, and Categories* (ECIS, 2023)  
-  Provides a formal, academically grounded definition of data products and distinguishes products from technical artifacts.  
-  https://www.researchgate.net/publication/370066847_UNDERSTANDING_DATA_PRODUCTS_MOTIVATIONS_DEFINITION_AND_CATEGORIES
+  *[Understanding Data Products: Motivations, Definition, and Categories](https://www.researchgate.net/publication/370066847_UNDERSTANDING_DATA_PRODUCTS_MOTIVATIONS_DEFINITION_AND_CATEGORIES)* (ECIS, 2023)  
+  Provides a formal, academically grounded definition of data products and distinguishes products from technical artifacts.
 
 - **M. Redwan Hasan et al.**  
-  *Designing Data Products for Sustained Value* (Information Systems Journal, Wiley, 2025)  
-  Introduces the Data Product Canvas and codifies ownership, accountability, and consumer alignment as core design principles.  
-  https://onlinelibrary.wiley.com/doi/10.1111/isj.12603
+  *[Designing Data Products for Sustained Value](https://onlinelibrary.wiley.com/doi/10.1111/isj.12603)* (Information Systems Journal, Wiley, 2025)  
+  Introduces the Data Product Canvas and codifies ownership, accountability, and consumer alignment as core design principles.
 
 - **McKinsey & Company**  
-  *The Missing Data Link: Five Practical Lessons to Scale Your Data Products* (2023)  
-  Demonstrates how product-oriented data operating models reduce duplication and accelerate insight delivery at scale.  
-  https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-missing-data-link-five-practical-lessons-to-scale-your-data-products
+  *[The Missing Data Link: Five Practical Lessons to Scale Your Data Products](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-missing-data-link-five-practical-lessons-to-scale-your-data-products)* (2023)  
+  Demonstrates how product-oriented data operating models reduce duplication and accelerate insight delivery at scale.
 
 ## Related Reading
 
 - **Harvard Business Review**  
-  *A Better Way to Put Your Data to Work* (2022)  
-  Explores why organizations treating data as a reusable product achieve higher trust and adoption.  
-  https://hbr.org/2022/07/a-better-way-to-put-your-data-to-work
+  *[A Better Way to Put Your Data to Work](https://hbr.org/2022/07/a-better-way-to-put-your-data-to-work)* (2022)  
+  Explores why organizations treating data as a reusable product achieve higher trust and adoption.
 
 - **IBM**  
-  *What Is Data as a Product (DaaP)?* (2024)  
-  Provides an enterprise-oriented definition and practical operating model for implementing data products.  
-  https://www.ibm.com/think/topics/data-as-a-product
+  *[What Is Data as a Product (DaaP)?](https://www.ibm.com/think/topics/data-as-a-product)* (2024)  
+  Provides an enterprise-oriented definition and practical operating model for implementing data products.
 
 - **Netflix Technology Blog**  
-  *Data as a Product: Applying a Product Mindset to Data at Netflix* (2024–2025)  
-  Real-world examples of event-driven data products enabling reuse, experimentation, and rapid iteration.  
-  https://netflixtechblog.medium.com/data-as-a-product-applying-a-product-mindset-to-data-at-netflix-4a4d1287a31d
+  *[Data as a Product: Applying a Product Mindset to Data at Netflix](https://netflixtechblog.medium.com/data-as-a-product-applying-a-product-mindset-to-data-at-netflix-4a4d1287a31d)* (2024–2025)  
+  Real-world examples of event-driven data products enabling reuse, experimentation, and rapid iteration.
