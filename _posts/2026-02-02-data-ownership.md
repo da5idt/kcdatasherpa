@@ -136,22 +136,17 @@ It is an operating model. Treat it like one.
 ## References
 
 **Juliana Jackson**  
-*Insights Without Owners Don’t Move Organizations*  
-https://julianajackson.substack.com/p/data-ownership-accountability
+*[Insights Without Owners Don’t Move Organizations](https://julianajackson.substack.com/p/data-ownership-accountability)*
 
 **Netflix Technology Blog**  
-Domain-aligned data ownership and decentralized execution  
-https://netflixtechblog.com/data-mesh-a-data-movement-and-processing-platform-netflix-1288bcab2873  
-https://netflixtechblog.com/data-movement-in-netflix-studio-via-data-mesh-3fddcceb1059
+*[Domain-aligned data ownership and decentralized execution](https://netflixtechblog.com/data-mesh-a-data-movement-and-processing-platform-netflix-1288bcab2873)*  
+*[Data movement in Netflix Studio via data mesh](https://netflixtechblog.com/data-movement-in-netflix-studio-via-data-mesh-3fddcceb1059)*
 
 **Stripe Engineering Blog**  
-Ownership of metrics, correctness, and financial accuracy  
-https://stripe.com/blog/ledger-stripe-system-for-tracking-and-validating-money-movement
+*[Ownership of metrics, correctness, and financial accuracy](https://stripe.com/blog/ledger-stripe-system-for-tracking-and-validating-money-movement)*
 
 **Wayfair Technology Blog**  
-Domain-aligned ownership in a complex enterprise environment  
-https://www.aboutwayfair.com/careers/tech-blog
+*[Domain-aligned ownership in a complex enterprise environment](https://www.aboutwayfair.com/careers/tech-blog)*
 
 **Amazon Builders’ Library**  
-Single-threaded leadership and decision clarity  
-https://aws.amazon.com/builders-library/single-threaded-leadership/
+*[Single-threaded leadership and decision clarity](https://aws.amazon.com/builders-library/single-threaded-leadership/)*
