@@ -9,75 +9,131 @@ hero_alt: "Illustration of data icons pouring from a pipe onto a conveyor with a
 hero_caption: "Treating data as a product turns scattered signals into trusted, reusable assets."
 ---
 
-Most organizations are drowning in data and starving for insight.
+Most organizations don't have a data problem.  
 
-This isn’t a tooling problem. It isn’t a platform problem. And it definitely isn’t solved by another dashboard or lakehouse migration.
+**They have a trust problem**.
 
-<!--
-It’s an organizational and operating model failure.
--->
+Ask five people for the same metric and you'll get five different answers. Dashboards **disagree**. Numbers need "**explaining**." Analysts spend more time validating data than using it. Executives hedge decisions because they **don't fully believe** what they're seeing.
 
-The failure is ownership, incentives, and lifecycle.
+So teams do what feels rational: they **rebuild** the data themselves.
 
-We have spent the last decade getting very good at moving data around. Pipelines are faster. Storage is cheaper. Volumes are exploding. And yet trust, reuse, and speed remain elusive.
+This cycle repeats everywhere. More pipelines. More dashboards. More tooling. More cost. **Less confidence**.
 
-The uncomfortable truth is this: **we still treat data as exhaust, not as a product**.
+Here's the part most organizations don't want to admit: this isn't a tooling failure. It isn't a platform failure. And it definitely isn't solved by the next dashboard or lakehouse migration.
 
-## Data Volume Isn’t the Problem. Clarity Is.
+**It's an operating model failure**.
 
-Global data volumes are growing at over 23% per year, heading toward 180 zettabytes. None of that matters if teams cannot agree on what a metric means, where it comes from, or whether it is safe to use.
+We've spent the last decade getting excellent at moving data. Pipelines are faster. Storage is cheaper. Volumes are exploding. And yet trust, reuse, and speed remain **stubbornly out of reach**.
 
-If you have ever seen two dashboards showing the same KPI with different numbers, you have already paid the tax for this failure.
+Because we still treat data as **exhaust** instead of what it actually is: a product that someone must own, maintain, and be accountable for.
 
-Research from organizations like MIT CISR and McKinsey consistently shows that the core issue is not lack of data or technology, but lack of ownership and clarity around how data is defined, managed, and used.
+## How We Got Here: The Two Models That Shaped Today's Data Chaos
+
+The lack of trust in enterprise data didn't appear overnight. It is the predictable outcome of how organizations have historically tried to manage data at scale.
+
+Most companies have lived in one of two operating models. Sometimes both, at different points in time.
+
+### The Monolithic Model
+
+In the monolithic model, a centralized data team owns everything. Data ingestion, modeling, definitions, dashboards, governance, and access all flow through a single function.
+
+The promise is consistency and control. One version of the truth. Standard definitions. Centralized governance.
+
+The reality is slower and more fragile.
+
+As demand grows, the backlog grows faster. Business teams wait weeks or months for changes. Context is lost as requests move through layers of translation. Data teams become bottlenecks instead of enablers, and governance turns into a gatekeeping function applied after the fact.
+
+The system optimizes for control, not learning. Eventually, teams route around it.
+
+I have seen this at a large company I worked for.  All development had to go through a formal approval process. Once approved only specific development teams had the access and approval to develop.  The developer's separation from the business made it difficult for them to understand the core need.  All of this slowed the process down from weeks to months.  Business leadership started to complain that the IT group could not move at the "Speed of Business" and things needed to change.
+
+### The Grassroots Model
+
+The grassroots model emerges as a reaction to centralization. Business-aligned teams build what they need, when they need it. Speed improves. Innovation accelerates. Ownership feels closer to the work.
+
+At first, this feels like progress.
+
+But without shared standards, definitions drift. Pipelines fork. Metrics diverge. The same concept is modeled five different ways. Trust collapses quietly, then suddenly.
+
+Governance becomes reactive. Central teams chase inconsistencies instead of designing for reuse. What started as autonomy turns into fragmentation.
+
+The system optimizes for speed, not coherence.
+
+That same large company had one of the best Self-Service Analytics solutions I have been part of.  However, there were still major issues.  Because we had 400 business users with Tableau licenses we had major report sprawl.  One business unit would look at an official report and think "this is great but I need to customize it for my business unit."  The result: the same report with different values for key metrics which ended with business leaders arguing about what the right value should be.  
+
+### The Convenient Scapegoat: Data Volume
+
+At this point, many organizations reach for an easy explanation: the data is simply too big.
+
+And it's true that data volume is increasing, roughly 23 percent year over year. That growth is unavoidable.
+
+But volume is not the root cause. It is a stress test.
+
+MIT CISR and McKinsey consistently show that the core issue is not lack of data or technology, but lack of ownership and clarity around how data is defined, managed, and used.
+
+Small systems can tolerate ambiguity. Large ones cannot.
 
 When data is managed as a byproduct of applications, nobody owns the outcome. Rework multiplies. Duplication becomes normal. Governance turns into a reactive control function instead of a design principle.
 
-You do not have a data shortage. You have a clarity shortage.
+Scale doesn't create the problem. It exposes it.
 
-## Why Traditional Data Models Break Down
+### The Model That Actually Works
 
-Most organizations fall on one of two two broken extremes:
+After watching both models fail, a different pattern has emerged that both academic research and enterprise case studies conclude can provide a better outcome: treat your Data as a Product.  
 
-**The monolithic model**  
-Centralized, slow, and brittle. Consistency is promised, but every new request goes into a growing backlog. Innovation waits its turn.
+To do this successfully you need to merge the monolithic and grassroots approaches into one.  This means you need a centralized data team that owns the platform, shared capabilities, and standards. This is paired with Business teams who own data products, definitions, and outcomes. 
 
-**The grassroots model**  
-Fast, flexible, and fragmented. Teams move quickly, but definitions drift, pipelines fork, and trust collapses under its own weight.
+This balance enables teams to move quickly without fragmenting trust. It allows reuse without central bottlenecks. And it turns governance from a brake into guardrails.
 
-Both academic research and enterprise case studies point to the same conclusion: sustainable scale requires **autonomy with shared standards**, not one or the other. In practice, this means a centralized data team owning the platform, shared capabilities, and standards, while business-aligned teams own data products, definitions, and outcomes. This balance enables reuse and self-service without sacrificing trust.
+This is the operating model that makes data trustworthy at scale.
 
-## What “Data as a Product” Actually Means
+## What "Data as a Product" Actually Means
 
-A data product is not a dataset.
+Let's start by clearing the confusion. A data product is not a pipeline, a table, or a dashboard. Those are implementation artifacts, not products.
 
-A data product is an asset that is:
-- Owned by a named individual
-- Built for a defined consumer
-- Managed across a lifecycle
-- Measured for reliability and value
+### A Formal Definition of a Data Product
 
-This definition aligns closely with recent work from MIT CISR, ECIS, and industry practitioners who argue that data must be treated with the same rigor as any customer-facing product.
+What exactly is a data product? Legner and Hasan describe a data product as:
 
-In practice, a real data product includes:
-- Trusted inputs with traceable lineage
-- Explicit transformation logic
-- Clear output interfaces, tables, APIs, streams, or applications
-- Documentation that explains meaning, not just schema
-- Monitoring and Service Level Agreements (SLAs) for freshness, quality, and availability
-- Governance baked in, not bolted on
+> **"A reusable, purpose-built data asset that is designed for a specific consumer, owned by a responsible party, and managed across its lifecycle to deliver measurable value."**
 
-If you cannot answer who owns it, who uses it, and how well it performs, you do not have a data product. You have a table. Also, it is critical that the data product team is explicitly funded, properly staffed, and held accountable for outcomes. Without this, “ownership” becomes a symbolic role with no real authority or impact.
+The key here is **ownership**, **intent**, and **accountability**, not the underlying technology. Pipelines, tables, and dashboards are implementation components. They may enable a data product, but they are not the product itself.
 
-*Not all data should be treated as a product*. Product-level rigor should be reserved for data that is decision-critical, widely reused, or directly tied to measurable business outcomes. Applying full product discipline everywhere creates drag, not leverage.
+### Core Attributes of a Data Product
 
-Over-productizing low-value data increases cognitive load, operating cost, and governance friction without improving decisions, ultimately slowing the teams it was meant to help.
+**Clear ownership**: A named individual or team is accountable for the data product's correctness, availability, and evolution.
+
+**Defined consumers and use cases**: The data product is built intentionally for specific users or decisions, not for abstract reuse.
+
+**Lifecycle management**: The product is actively managed from creation through change, deprecation, and retirement.
+
+**Explicit quality and reliability expectations**: Freshness, completeness, accuracy, and availability are defined and measurable.
+
+**Documented meaning, not just structure**: Business definitions, assumptions, and constraints are explicit and discoverable.
+
+**Stable and well-defined interfaces**: Outputs are exposed through contracts such as tables, APIs, or streams that consumers can rely on.
+
+**Value measurement**: The product's usage and impact are observable, enabling prioritization and investment decisions.
+
+If any of these are missing, a data asset may be technically useful, but it is not a data product. It is infrastructure. This distinction matters because only data products can be **trusted**, **reused**, and **scaled** sustainably.
+
+In practice, a data product is the **composition** of these attributes into something users can safely depend on. It brings together trusted inputs with traceable lineage, explicit transformation logic, and stable output interfaces such as tables, APIs, streams, or applications. Its documentation explains meaning and intent, not just schema. Its behavior is observable through monitoring and SLAs that make freshness, quality, and availability explicit. Governance is embedded by design, not applied retroactively.
+
+This is the difference between data that merely exists and data that can be relied on.
+
+**One final clarification matters.**
+
+Not all data should be treated as a product. Product-level rigor is not a universal requirement. It should be reserved for data that is decision-critical, widely reused, or directly tied to measurable business outcomes.
+
+Applying full product discipline everywhere does not increase trust. It creates drag. When low value or low impact data is treated as a product, mental load rises, operating costs increase, and governance friction grows without improving decisions. Teams slow down under process that delivers no value.
+
+Data as a product is about focus, not perfection. The goal is not to productize everything, but to apply rigor where failure is costly and trust is non-negotiable.
 
 ## Ownership Is the Non-Negotiable Ingredient
 
 Trust does not emerge from good intentions. It emerges from accountability.
 
-MIT CISR research argues that product practices and accountability improve ROI over time. The reason is simple. When someone is accountable, uncertainty disappears.
+MIT CISR research shows that product practices and accountability improve ROI over time. The reason is simple. When someone is accountable, uncertainty disappears.
 
 SLAs turn trust into something measurable:
 - How fresh is the data?
@@ -88,29 +144,30 @@ This is not red tape. This is how software teams have operated for decades. Data
 
 ## Trust Is Designed, Not Assumed
 
-If you cannot explain how trust is engineered into your data, you do not have it.
+Ownership alone isn't enough. Trust requires practices and metrics that users can see and verify. If you cannot explain how trust is engineered into your data, you do not have it.
 
-Trusted data products share a common set of mechanics:
+Trusted data products share a common set of properties:
 - Observable data quality
 - Transparent lineage
 - Published documentation
 - Feedback loops that users can see and influence
 
-Studies from McKinsey and Wiley show that teams using these practices dramatically reduce reconciliation work and validation cycles, freeing time for actual analysis instead of defensive checking.
+McKinsey and Wiley's research shows that teams using these practices dramatically reduce reconciliation and validation cycles, freeing time for actual analysis instead of reactive validation.
 
 Trusted data gets reused. Untrusted data gets rebuilt.
 
 ## Reuse Is the Flywheel
 
-Once trust exists, reuse compounds.
+
+Once trust exists, reuse multiplies.
 
 Reuse reduces cost, accelerates delivery, and creates a shared foundation for experimentation. Harvard Business Review research shows that organizations treating data as a reusable product deliver insights faster and reduce total cost of ownership.
 
-The math is brutally simple:
+There is a very simple way to think about this:
 
-**Reuse = confidence × discoverability × accessibility**
+**Reuse = trusted data × discoverability × low friction access**
 
-If any one of those is missing, reuse collapses. When all three exist, velocity follows.
+If any one of these features is missing, reuse disolves. When all three exist, velocity follows.
 
 This is how organizations move from one-off analytics to platforms that actually scale.
 
@@ -126,7 +183,7 @@ In a data product model, governance defines the rules for safe reuse upfront:
 
 Gartner and MIT CISR research both show that when governance is treated as an enabling framework rather than a compliance gate, teams move faster, not slower. Confidence replaces caution.
 
-## How to Start Without a “Transformation Program”
+## How to Start Without a "Transformation Program"
 
 You do not need to reorganize the company.
 
@@ -149,29 +206,43 @@ It is about ownership, accountability, and trust as design principles.
 
 Start small. Start deliberately. And stop pretending your data problems will be solved by the next platform upgrade.
 
-## References & Further Reading
+# References
 
-The ideas in this post build on a growing body of academic research and real-world practice demonstrating that treating data as a product improves trust, reuse, and delivery speed.
+## Cited Sources
 
-**Academic & Research Foundations**
-- MIT Center for Information Systems Research (CISR). *Shifting to a Product Mindset for Data* (2025).  
-  Explores how ownership, lifecycle management, and accountability directly impact analytics speed and rework.
+- **MIT Center for Information Systems Research (CISR)**  
+  *Shifting to a Product Mindset for Data* (2025)  
+  Establishes the link between product ownership, lifecycle management, and improved trust, reuse, and ROI in enterprise analytics.  
+  https://cisr.mit.edu/publication/2025_0401_DataProductMindset_WixomVanderMeulenBeath
 
-- Hasan, R. et al. *Designing Data Products for Sustained Value*. Information Systems Journal, Wiley (2025).  
-  Introduces the Data Product Canvas and formalizes design principles for trustworthy, reusable data products.
+- **Christine Legner & M. Redwan Hasan**  
+  *Understanding Data Products: Motivations, Definition, and Categories* (ECIS, 2023)  
+  Provides a formal, academically grounded definition of data products and distinguishes products from technical artifacts.  
+  https://www.researchgate.net/publication/370066847_UNDERSTANDING_DATA_PRODUCTS_MOTIVATIONS_DEFINITION_AND_CATEGORIES
 
-- Legner, C. & Hasan, R. *Understanding Data Products: Motivations, Definition, and Categories*. European Conference on Information Systems (ECIS, 2023).  
-  Establishes a clear definition of data products and their role in modern data architectures.
+- **M. Redwan Hasan et al.**  
+  *Designing Data Products for Sustained Value* (Information Systems Journal, Wiley, 2025)  
+  Introduces the Data Product Canvas and codifies ownership, accountability, and consumer alignment as core design principles.  
+  https://onlinelibrary.wiley.com/doi/10.1111/isj.12603
 
-**Industry & Practitioner Evidence**
-- McKinsey & Company. *Scaling Data Products to Generate More Value* (2023).  
-  Shows how product-oriented data teams accelerate insight delivery and reduce total cost through reuse.
+- **McKinsey & Company**  
+  *The Missing Data Link: Five Practical Lessons to Scale Your Data Products* (2023)  
+  Demonstrates how product-oriented data operating models reduce duplication and accelerate insight delivery at scale.  
+  https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-missing-data-link-five-practical-lessons-to-scale-your-data-products
 
-- Harvard Business Review. *A Better Way to Put Your Data to Work* (2022).  
-  Explains why organizations treating data as a product achieve higher trust and adoption.
+## Related Reading
 
-- IBM. *What Is Data as a Product (DaaP)?* (2024).  
-  Provides a practical enterprise-oriented definition and operating model.
+- **Harvard Business Review**  
+  *A Better Way to Put Your Data to Work* (2022)  
+  Explores why organizations treating data as a reusable product achieve higher trust and adoption.  
+  https://hbr.org/2022/07/a-better-way-to-put-your-data-to-work
 
-- Netflix Technology Blog. *Applying a Product Mindset to Data* (2024–2025).  
-  Real-world examples of event-driven data products enabling rapid experimentation and innovation.
+- **IBM**  
+  *What Is Data as a Product (DaaP)?* (2024)  
+  Provides an enterprise-oriented definition and practical operating model for implementing data products.  
+  https://www.ibm.com/think/topics/data-as-a-product
+
+- **Netflix Technology Blog**  
+  *Data as a Product: Applying a Product Mindset to Data at Netflix* (2024–2025)  
+  Real-world examples of event-driven data products enabling reuse, experimentation, and rapid iteration.  
+  https://netflixtechblog.medium.com/data-as-a-product-applying-a-product-mindset-to-data-at-netflix-4a4d1287a31d
