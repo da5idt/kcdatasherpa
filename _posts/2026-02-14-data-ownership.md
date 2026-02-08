@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Everyone Owns the Data Means No One Does"
-date: 2026-02-02
+date: 2026-02-14
 categories: [operating-models, leadership, data-ownership]
 description: "Why shared ownership creates paralysis, how unclear accountability erodes trust and speed, and how to implement clear data ownership without governance theater."
 hero_image: assets/images/posts/data-ownership/data_ownership.png

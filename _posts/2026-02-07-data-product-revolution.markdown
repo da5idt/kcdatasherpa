@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Data Product Revolution: Why Your Data Still Isn’t Trusted"
-date: 2026-01-04
+date: 2026-02-07
 categories: [data-products, operating-models]
 description: "Why organizations need ownership, trust, and product thinking to make data reusable."
 hero_image: assets/images/posts/data-product-revolution/data_product_revolution_header.png
