@@ -219,7 +219,7 @@ Start small. Start deliberately. And stop pretending your data problems will be 
   Provides a formal, academically grounded definition of data products and distinguishes products from technical artifacts.
 
 - **M. Redwan Hasan et al.**  
-  *[Designing Data Products for Sustained Value](https://onlinelibrary.wiley.com/doi/10.1111/isj.12603)* (Information Systems Journal, Wiley, 2025)  
+  *[The Data Product Canvas: Designing Data Products for Sustained Value From Enterprise Data](https://onlinelibrary.wiley.com/doi/10.1111/isj.12603)* (Information Systems Journal, Wiley, 2025)  
   Introduces the Data Product Canvas and codifies ownership, accountability, and consumer alignment as core design principles.
 
 - **McKinsey & Company**  
