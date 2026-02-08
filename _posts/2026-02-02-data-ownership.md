@@ -148,5 +148,5 @@ It is an operating model. Treat it like one.
 **Wayfair Technology Blog**  
 *[Domain-aligned ownership in a complex enterprise environment](https://www.aboutwayfair.com/careers/tech-blog)*
 
-**Amazon Builders’ Library**  
-*[Single-threaded leadership and decision clarity](https://aws.amazon.com/builders-library/single-threaded-leadership/)*
+**Amazon Executive Insights**  
+*[The two-pizza team](https://aws.amazon.com/executive-insights/content/amazon-two-pizza-team/)*
