@@ -37,7 +37,7 @@ theme: minima
 plugins:
   - jekyll-feed
 feed:
-  path: atom.xml
+  path: feed.xml
 
 
 # Exclude from processing.
