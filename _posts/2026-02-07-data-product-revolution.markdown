@@ -9,7 +9,7 @@ hero_alt: "Illustration of data icons pouring from a pipe onto a conveyor with a
 hero_caption: "Treating data as a product turns scattered signals into trusted, reusable assets."
 ---
 
-Most organizations don't have a data problem.  
+Most organizations don't have a data problem.
 
 **They have a trust problem**.
 
@@ -45,7 +45,7 @@ As demand grows, the backlog grows faster. Business teams wait weeks or months f
 
 The system optimizes for control, not learning. Eventually, teams route around it.
 
-I have seen this at a large company I worked for.  All development had to go through a formal approval process. Once approved only specific development teams had the access and approval to develop.  The developer's separation from the business made it difficult for them to understand the core need.  All of this slowed the process down from weeks to months.  Business leadership started to complain that the IT group could not move at the "Speed of Business" and things needed to change.
+I have seen this at a large company I worked for. All development had to go through a formal approval process. Once approved only specific development teams had the access and approval to develop. The developer's separation from the business made it difficult for them to understand the core need. All of this slowed the process down from weeks to months. Business leadership started to complain that the IT group could not move at the "Speed of Business" and things needed to change.
 
 ### The Grassroots Model
 
@@ -59,7 +59,7 @@ Governance becomes reactive. Central teams chase inconsistencies instead of desi
 
 The system optimizes for speed, not coherence.
 
-That same large company had one of the best Self-Service Analytics solutions I have been part of.  However, there were still major issues.  Because we had 400 business users with Tableau licenses we had major report sprawl.  One business unit would look at an official report and think "this is great but I need to customize it for my business unit."  The result: the same report with different values for key metrics which ended with business leaders arguing about what the right value should be.  
+That same large company had one of the best Self-Service Analytics solutions I have been part of. However, there were still major issues. Because we had 400 business users with Tableau licenses we had major report sprawl. One business unit would look at an official report and think "this is great but I need to customize it for my business unit."  The result: the same report with different values for key metrics which ended with business leaders arguing about what the right value should be.
 
 ### The Convenient Scapegoat: Data Volume
 
@@ -79,9 +79,9 @@ Scale doesn't create the problem. It exposes it.
 
 ### The Model That Actually Works
 
-After watching both models fail, a different pattern has emerged that both academic research and enterprise case studies conclude can provide a better outcome: treat your Data as a Product.  
+After watching both models fail, a different pattern has emerged that both academic research and enterprise case studies conclude can provide a better outcome: treat your Data as a Product.
 
-To do this successfully you need to merge the monolithic and grassroots approaches into one.  This means you need a centralized data team that owns the platform, shared capabilities, and standards. This is paired with Business teams who own data products, definitions, and outcomes. 
+To do this successfully you need to merge the monolithic and grassroots approaches into one. This means you need a centralized data team that owns the platform, shared capabilities, and standards. This is paired with Business teams who own data products, definitions, and outcomes. 
 
 This balance enables teams to move quickly without fragmenting trust. It allows reuse without central bottlenecks. And it turns governance from a brake into guardrails.
 
@@ -127,7 +127,7 @@ Not all data should be treated as a product. Product-level rigor is not a univer
 
 Applying full product discipline everywhere does not increase trust. It creates drag. When low value or low impact data is treated as a product, mental load rises, operating costs increase, and governance friction grows without improving decisions. Teams slow down under process that delivers no value.
 
-Data as a product is about focus, not perfection. The goal is not to productize everything, but to apply rigor where failure is costly and trust is non-negotiable.
+Data as a Product is about focus, not perfection. The goal is not to productize everything, but to apply rigor where failure is costly and trust is non-negotiable.
 
 ## Ownership Is the Non-Negotiable Ingredient
 
@@ -167,11 +167,11 @@ There is a very simple way to think about this:
 
 **Reuse = trusted data × discoverability × low friction access**
 
-If any one of these features is missing, reuse disolves. When all three exist, velocity follows.
+If any one of these features is missing, reuse dissolves. When all three exist, velocity follows.
 
 This is how organizations move from one-off analytics to platforms that actually scale.
 
-## Governance Is an Enabler, Not a Gate nor Red Tape
+## Governance Is an Enabler, Not a Gate or Red Tape
 
 Governance fails when it is treated as a control mechanism imposed after the fact.
 
