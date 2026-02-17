@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Everyone Owns the Data Means No One Does"
+title: "When Everyone Owns the Data, No One Does"
 date: 2026-02-14
 categories: [operating-models, leadership, data-ownership]
 description: "Why shared ownership creates paralysis, how unclear accountability erodes trust and speed, and how to implement clear data ownership without governance theater."
@@ -66,7 +66,7 @@ All of these perspectives are valid. None of them justify shared accountability.
 
 Successful organizations assign **one domain owner** responsible for defining what a customer is, setting quality standards, and resolving conflicts when definitions don’t align. That owner collaborates broadly, but retains decision authority.
 
-Wayfair applied this model by aligning data engineers to business domains so accountability remained clear even in a complex environment.
+Many companies have applied this model by aligning data engineers to business domains so accountability remained clear even in a complex environment.
 
 ## Why Clear Ownership Works
 
@@ -144,9 +144,6 @@ It is an operating model. Treat it like one.
 
 **Stripe Engineering Blog**  
 *[Ownership of metrics, correctness, and financial accuracy](https://stripe.com/blog/ledger-stripe-system-for-tracking-and-validating-money-movement)*
-
-**Wayfair Technology Blog**  
-*[Domain-aligned ownership in a complex enterprise environment](https://www.aboutwayfair.com/careers/tech-blog)*
 
 **Amazon Executive Insights**  
 *[The two-pizza team](https://aws.amazon.com/executive-insights/content/amazon-two-pizza-team/)*
