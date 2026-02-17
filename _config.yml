@@ -22,8 +22,8 @@ title: KCDataSherpa
 #email: david.traynham@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   KCDataSherpa is where I share practical writing, things I come across in the data world, and lessons learned from building and leading data platforms. The goal is to share what’s useful, without hype or unnecessary complexity.
-baseurl: "/kcdatasherpa" # the subpath of your site, e.g. /blog
-url: "https://da5idt.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # custom domain serves from site root
+url: "https://kcdatasherpa.com" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 github_username:  da5idt
 
