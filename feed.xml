@@ -44,6 +44,7 @@ sitemap: false
 
   {% assign posts_limit = site.feed.posts_limit | default: 10 %}
   {% assign posts = site.posts | where_exp: "post", "post.draft != true" | sort: "date" | reverse %}
+  {% assign site_root = '/' | absolute_url %}
   {% for post in posts limit: posts_limit %}
     {% assign post_title = post.title | smartify | strip_html | normalize_whitespace | xml_escape %}
     <entry{% if post.lang %} xml:lang="{{ post.lang }}"{% endif %}>
@@ -52,8 +53,6 @@ sitemap: false
       <published>{{ post.date | date_to_xmlschema }}</published>
       <updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
       <id>{{ post.id | absolute_url | xml_escape }}</id>
-      <content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}"><![CDATA[{{ post.content | strip }}]]></content>
-
       {% assign post_author = post.author | default: post.authors[0] | default: site.author %}
       {% assign post_author = site.data.authors[post_author] | default: post_author %}
       {% assign post_author_name = post_author.name | default: post_author %}
@@ -83,6 +82,17 @@ sitemap: false
         <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{ post_image | xml_escape }}" />
         <media:content medium="image" url="{{ post_image | xml_escape }}" xmlns:media="http://search.yahoo.com/mrss/" />
       {% endif %}
+
+      {% assign src_absolute_double = 'src="' | append: site_root %}
+      {% assign src_absolute_single = "src='" | append: site_root %}
+      {% assign post_content = post.content | strip
+        | replace: 'src="/', src_absolute_double
+        | replace: "src='/", src_absolute_single
+      %}
+      {% if post_image %}
+        {% assign post_content = '<p><img src="' | append: post_image | append: '" alt="" /></p>' | append: post_content %}
+      {% endif %}
+      <content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}"><![CDATA[{{ post_content }}]]></content>
     </entry>
   {% endfor %}
 </feed>
