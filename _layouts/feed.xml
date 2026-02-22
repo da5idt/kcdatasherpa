@@ -1,7 +1,3 @@
----
-layout: feed
-sitemap: false
----
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" {% if site.lang %}xml:lang="{{ site.lang }}"{% endif %}>
   <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
@@ -44,15 +40,35 @@ sitemap: false
 
   {% assign posts_limit = site.feed.posts_limit | default: 10 %}
   {% assign posts = site.posts | where_exp: "post", "post.draft != true" | sort: "date" | reverse %}
-  {% assign site_root = '/' | absolute_url %}
   {% for post in posts limit: posts_limit %}
     {% assign post_title = post.title | smartify | strip_html | normalize_whitespace | xml_escape %}
+    {% assign absolute_src_prefix = 'src="' | append: site.url | append: '/' %}
+    {% assign absolute_src_prefix_sq = "src='" | append: site.url | append: '/' %}
+    {% assign absolute_href_prefix = 'href="' | append: site.url | append: '/' %}
+    {% assign absolute_href_prefix_sq = "href='" | append: site.url | append: '/' %}
+    {% assign post_content = post.content
+      | replace: 'src="/', absolute_src_prefix
+      | replace: "src='/", absolute_src_prefix_sq
+      | replace: 'src="assets/', absolute_src_prefix
+      | replace: "src='assets/", absolute_src_prefix_sq
+      | replace: 'href="/', absolute_href_prefix
+      | replace: "href='/", absolute_href_prefix_sq
+      | replace: 'href="assets/', absolute_href_prefix
+      | replace: "href='assets/", absolute_href_prefix_sq
+    %}
     <entry{% if post.lang %} xml:lang="{{ post.lang }}"{% endif %}>
       <title type="html">{{ post_title }}</title>
       <link href="{{ post.url | absolute_url }}" rel="alternate" type="text/html" title="{{ post_title }}" />
       <published>{{ post.date | date_to_xmlschema }}</published>
       <updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
       <id>{{ post.id | absolute_url | xml_escape }}</id>
+      <content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}"><![CDATA[
+{% if post.image %}
+<p><img src="{{ post.image }}" class="webfeedsFeaturedVisual" width="1200" height="630" alt="" /></p>
+{% endif %}
+{{ post_content | strip }}
+]]></content>
+
       {% assign post_author = post.author | default: post.authors[0] | default: site.author %}
       {% assign post_author = site.data.authors[post_author] | default: post_author %}
       {% assign post_author_name = post_author.name | default: post_author %}
@@ -69,11 +85,6 @@ sitemap: false
         <category term="{{ tag | xml_escape }}" />
       {% endfor %}
 
-      {% assign post_summary = post.description | default: post.excerpt %}
-      {% if post_summary and post_summary != empty %}
-        <summary type="html"><![CDATA[{{ post_summary | strip_html | normalize_whitespace }}]]></summary>
-      {% endif %}
-
       {% assign post_image = post.image.path | default: post.image | default: post.hero_image %}
       {% if post_image %}
         {% unless post_image contains "://" %}
@@ -82,17 +93,6 @@ sitemap: false
         <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{ post_image | xml_escape }}" />
         <media:content medium="image" url="{{ post_image | xml_escape }}" xmlns:media="http://search.yahoo.com/mrss/" />
       {% endif %}
-
-      {% assign src_absolute_double = 'src="' | append: site_root %}
-      {% assign src_absolute_single = "src='" | append: site_root %}
-      {% assign post_content = post.content | strip
-        | replace: 'src="/', src_absolute_double
-        | replace: "src='/", src_absolute_single
-      %}
-      {% if post_image %}
-        {% assign post_content = '<p><img src="' | append: post_image | append: '" alt="" /></p>' | append: post_content %}
-      {% endif %}
-      <content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}"><![CDATA[{{ post_content }}]]></content>
     </entry>
   {% endfor %}
 </feed>

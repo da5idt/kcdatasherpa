@@ -5,6 +5,7 @@ date: 2026-02-14
 categories: [operating-models, leadership, data-ownership]
 description: "Why shared ownership creates paralysis, how unclear accountability erodes trust and speed, and how to implement clear data ownership without governance theater."
 hero_image: assets/images/posts/data-ownership/data_ownership.png
+image: https://kcdatasherpa.com/assets/images/posts/data-ownership/data_ownership.png
 hero_alt: "Abstract illustration on a black background showing multiple thin, misaligned lines entering from the left and gradually converging into a single clean path moving to the right."
 hero_caption: "From scattered effort to deliberate alignment. Progress starts when many inputs resolve into one clear direction."
 ---
