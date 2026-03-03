@@ -36,7 +36,7 @@ global:
   error-handling:
     description: Needs description - run /index-standards
   tech-stack:
-    description: Needs description - run /index-standards
+    description: Jekyll site generator, Ruby/Bundler, Minima theme, GitHub Pages hosting, GitHub Actions CI/CD
   validation:
     description: Needs description - run /index-standards
 
