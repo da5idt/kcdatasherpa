@@ -1,27 +1,24 @@
-# Tech Stack
+## Tech Stack
 
-## Framework & Runtime
-- **Site Generator:** Jekyll (via `github-pages` gem ~232)
+### Site Generator
+- **Framework:** Jekyll (static site generator)
 - **Language/Runtime:** Ruby 3.2
 - **Package Manager:** Bundler
-- **Local dev:** `bundle exec jekyll serve`
+- **Theme:** Minima (~> 2.5)
 
-## Theme & Frontend
-- **Theme:** Minima ~2.5
-- **CSS:** Custom overrides in `assets/css/custom.css`
-- **Templating:** Liquid (Jekyll built-in)
-- **JavaScript:** None
+### Hosting & Deployment
+- **Hosting:** GitHub Pages
+- **Custom Domain:** kcdatasherpa.com
+- **CI/CD:** GitHub Actions
+  - `jekyll.yml` — builds and deploys on push to `main`
+  - `pr-checks.yml` — Jekyll build + Codex AI review on all PRs
 
-## Jekyll Plugins
-- **jekyll-feed** ~0.12 — generates `feed.xml` (Atom)
-- **jekyll-seo-tag** — Open Graph, Twitter card, and meta tags (included via github-pages gem)
+### Plugins
+- `jekyll-feed` — RSS feed at `/feed.xml`
+- `github-pages` gem (~> 232) — GitHub Pages compatibility layer
 
-## Hosting & Deployment
-- **Hosting:** GitHub Pages with custom domain `kcdatasherpa.com` (CNAME)
-- **Deploys on:** push to `main` branch
+### AI / Review
+- **PR Review:** `openai/codex-action@v1` runs on every PR
 
-## CI/CD (GitHub Actions)
-- **`jekyll.yml`** — builds and deploys to GitHub Pages on merge to main
-- **`pr-checks.yml`** — runs on PRs to main:
-  - Jekyll build check
-  - OpenAI Codex PR review (`openai/codex-action@v1`)
+### No Database / No Backend
+Static site. No backend, database, API, or server-side runtime in production.
