@@ -6,43 +6,28 @@ content:
   writing-style:
     description: Post types, writing voice, and structure rules for the KCDataSherpa blog
 
-backend:
-  api:
-    description: Needs description - run /index-standards
-  migrations:
-    description: Needs description - run /index-standards
-  models:
-    description: Needs description - run /index-standards
-  queries:
-    description: Needs description - run /index-standards
-
 frontend:
   accessibility:
-    description: Needs description - run /index-standards
+    description: HTML accessibility standards for Jekyll layouts and post content
   components:
-    description: Needs description - run /index-standards
+    description: Jekyll includes and Liquid component patterns
   css:
-    description: Needs description - run /index-standards
+    description: Minima theme CSS conventions and override strategy
   responsive:
-    description: Needs description - run /index-standards
+    description: Responsive design and mobile-first layout standards
 
 global:
+  coding-style:
+    description: General coding style, naming, and DRY conventions
+  commenting:
+    description: Minimal, evergreen code commenting practices
+  conventions:
+    description: Project structure, documentation, and dev workflow conventions
   git-workflow:
     description: Branch naming, PR workflow, and draft-to-post publishing process
-  coding-style:
-    description: Needs description - run /index-standards
-  commenting:
-    description: Needs description - run /index-standards
-  conventions:
-    description: Needs description - run /index-standards
-  error-handling:
-    description: Needs description - run /index-standards
   tech-stack:
-    description: Jekyll site generator, Ruby/Bundler, Minima theme, GitHub Pages hosting, GitHub Actions CI/CD
-  validation:
-    description: Needs description - run /index-standards
+    description: Jekyll, Ruby 3.2/Bundler, Minima theme, GitHub Pages, GitHub Actions CI/CD with Codex review
 
 testing:
   test-writing:
-    description: Needs description - run /index-standards
-
+    description: Minimal, behavior-focused test writing strategy
