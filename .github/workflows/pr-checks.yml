@@ -29,6 +29,10 @@ jobs:
   claude-review:
     name: Claude Code Review
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      id-token: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
