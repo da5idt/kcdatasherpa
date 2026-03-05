@@ -92,8 +92,8 @@ KCDataSherpa is a Jekyll site built on the `minima` theme and deployed to GitHub
 **Deployment**
 - Production deploys are handled by GitHub Actions.
 - Any push to the `main` branch triggers `.github/workflows/jekyll.yml`, which builds the site and deploys to GitHub Pages.
-- Pull requests run `.github/workflows/pr-checks.yml`, which builds the site and runs the Codex review action.
+- Pull requests run `.github/workflows/pr-checks.yml`, which builds the site and runs the Claude Code review action.
 
 **Notes**
-- The site’s public URL and base path live in `_config.yml` (`url` and `baseurl`).
+- The siteâs public URL and base path live in `_config.yml` (`url` and `baseurl`).
 - If you change `_config.yml`, restart `jekyll serve` to pick up those changes.
