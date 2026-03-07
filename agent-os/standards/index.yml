@@ -26,7 +26,7 @@ global:
   git-workflow:
     description: Branch naming, PR workflow, and draft-to-post publishing process
   tech-stack:
-    description: Jekyll, Ruby 3.2/Bundler, Minima theme, GitHub Pages, GitHub Actions CI/CD with Codex review
+    description: Jekyll, Ruby 3.2/Bundler, Minima theme, GitHub Pages, GitHub Actions CI/CD with Claude Code review
 
 testing:
   test-writing:

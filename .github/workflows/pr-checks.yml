@@ -26,15 +26,19 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-  codex-review:
-    name: Codex Review
+  claude-review:
+    name: Claude Code Review
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      id-token: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Codex review
-        uses: openai/codex-action@v1
+      - name: Claude Code review
+        uses: anthropics/claude-code-action@beta
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
