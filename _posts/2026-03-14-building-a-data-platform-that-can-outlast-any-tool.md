@@ -4,7 +4,7 @@ title: "Building a Data Platform That Can Outlast Any Tool"
 date: 2026-03-14
 categories: [data-engineering, data-platform, databricks, snowflake, best-practices]
 description: "Why loosely coupled architecture is the only reliable strategy for surviving platform churn in the modern data stack."
-hero_image: assets/images/posts/building-a-data-platform-that-can-outlast-any-tool/hero.svg
+hero_image: assets/images/posts/building-a-data-platform-that-can-outlast-any-tool/loosly-coupled-architecture.png
 image: https://kcdatasherpa.com/assets/images/posts/building-a-data-platform-that-can-outlast-any-tool/loosly-coupled-architecture.png
 hero_alt: "A technical diagram illustrating a data platform architecture, showing data flow from diverse source systems through distinct stages of Ingestion, Transformation, and Delivery to various consumers, with overarching functional layers for monitoring, logging, governance, and security." 
 hero_caption: "Example end-to-end architecture and modular components of a modern, scalable data platform."
